@@ -11,16 +11,21 @@ body {
   color: #333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 100px;
   font-size: 14px;
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
 }
 
 .nav {
@@ -59,7 +64,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 60px 80px;
+  padding: 60px 100px;
   background: white;
   gap: 40px;
 }
@@ -70,7 +75,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
@@ -83,7 +88,8 @@ body {
 }
 
 .hero-text p {
-  font-size: 14px;
+  font-size: 18px;
+  color: gray;
   max-width: 450px;
 }
 
@@ -94,18 +100,19 @@ body {
 
 .our-plants {
   text-align: center;
-  padding: 60px 80px;
+  padding: 60px 100px;
 }
 
 .our-plants h2 {
-  font-size: 28px;
+  font-size: 40px;
   margin-bottom: 12px;
 }
 
 .our-plants p {
-  font-size: 14px;
+  font-size: 20px;
   max-width: 600px;
   margin: 0 auto;
+  color: gray;
 }
 
 .plant-grid {
@@ -157,11 +164,10 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 60px 80px;
-  max-width: 1500px; 
+  padding: 60px 100px;
+  max-width: 1500px;
   margin: 0 auto;
 }
-
 
 .lover-image {
   position: relative;
@@ -178,9 +184,9 @@ body {
 
 .trusted-badge {
   position: absolute;
-  top: -80px;   
-  right: -80px; 
-  width: 250px; 
+  top: -80px;
+  right: -80px;
+  width: 250px;
   height: auto;
   z-index: 5;
 }
@@ -214,16 +220,16 @@ body {
 }
 
 .lover-text ul li {
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 .deals {
   text-align: center;
-  padding: 60px 80px;
+  padding: 60px 120px;
 }
 
 .deals h2 {
-  font-size: 28px;
+  font-size: 40px;
   margin-bottom: 12px;
 }
 
@@ -233,7 +239,8 @@ body {
 }
 
 .deals p {
-  font-size: 14px;
+  font-size: 20px;
+  color: gray;
   max-width: 600px;
   margin: 0 auto 30px auto;
 }
@@ -276,33 +283,46 @@ body {
 }
 
 .deal-text {
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  padding: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     
+  align-items: center;         
   font-size: 14px;
+  color: white;             
+  text-align: center;          
 }
 
 .deal-text button {
-  margin-top: 6px;
-  padding: 6px 14px;
-  font-size: 12px;
-  background: white;
-  color: #f15a24;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
+  background: none;        
+  color: white;           
+  border: none;            
+  font-size: 14px;         
+  font-weight: 600;        
+  text-decoration: underline; 
+  padding: 0;              
+  cursor: pointer;         
 }
 
+
 .subscribe {
-  background: url('assets/news-letter-bg.png') center center / cover no-repeat;
-  padding: 80px 20px;
+  background-image: url('assets/news-letter-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 180px 20px;
   text-align: center;
   color: white;
 }
 
 .subscribe h2 {
-  font-size: 28px;
+  font-size: 38px;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -318,7 +338,7 @@ body {
   padding: 18px 24px;
   font-size: 14px;
   border: none;
-  width: 400px;
+  width: 450px;
   max-width: 90vw;
 }
 
@@ -335,7 +355,7 @@ body {
 
 .footer {
   background: white;
-  padding: 60px 80px;
+  padding: 60px 180px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -351,12 +371,12 @@ body {
 .footer-links {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 10px 40px;
+  gap: 30px 0px;
   flex: 2;
 }
 
 .footer-links a {
-  color: #000;
+  color: grey;
   text-decoration: none;
   font-weight: 500;
 }
@@ -365,9 +385,15 @@ body {
   display: flex;
   gap: 16px;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .footer-social img {
   width: 24px;
   height: 24px;
+}
+
+.footer-brand p {
+  font-size: 20px;
+  color: gray;
 }
